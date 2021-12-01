@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/alyssa1996/publish-package/issues"
   },
-  "homepage": "https://github.com/alyssa1996/publish-package#readme"
+  "homepage": "https://github.com/alyssa1996/publish-package#readme",
+  "publishConfig": {
+    "@alyssa1996:registry": "https://npm.pkg.github.com"
+  }
 }
