@@ -1,0 +1,22 @@
+{
+  "name": "@alyssa1996/test-package",
+  "version": "1.0.0",
+  "description": "this is test package",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alyssa1996/publish-package.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Jisu Park",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alyssa1996/publish-package/issues"
+  },
+  "homepage": "https://github.com/alyssa1996/publish-package#readme"
+}
