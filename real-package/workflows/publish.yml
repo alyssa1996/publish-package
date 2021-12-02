@@ -10,10 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
+        working-directory: real-package
         with:
           node-version: 12
       - run: npm ci
       - run: npm test
+        working-directory: real-package
 
   publish-gpr:
     needs: build
