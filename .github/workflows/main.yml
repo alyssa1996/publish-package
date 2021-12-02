@@ -3,12 +3,21 @@ on:
     branch: [main]
 
 defaults:
-  run:
+  runs-on:
     working-directory: real-package
 
 jobs:
   build:
+    defaults:
+      run:
+        working-directory: real-package
+    runs-on: ubuntu-latest
+    container:
+      image:  google/dart:latest
+
     steps:
-      - uses: actions/checkout@v1
-      - run: npm ci
-      - run: npm test
+    - uses: actions/checkout@v1
+      run: npm ci
+      working-directory: real-package
+      run: npm test
+      working-directory: real-package
