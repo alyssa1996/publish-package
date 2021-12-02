@@ -11,8 +11,8 @@
   "publishConfig": {
     "@alyssa1996:registry": "https://npm.pkg.github.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/octocat/my-other-repo.git"
-  }
+  // "repository": {
+  //   "type": "git",
+  //   "url": "https://github.com/octocat/my-other-repo.git"
+  // }
 }
