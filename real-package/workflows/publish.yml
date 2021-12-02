@@ -24,10 +24,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
+        working-directory: real-package
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
       - run: npm publish
+        working-directory: real-package
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
